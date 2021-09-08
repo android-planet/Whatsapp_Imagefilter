@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/drawable/circle.xml" value="0.37025641025641026" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/drawable/ic_done.xml" value="0.37025641025641026" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/drawable/ic_search.xml" value="0.37025641025641026" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/activity_file_picker.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/activity_image_edit.xml" value="0.33" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/activity_main.xml" value="0.3458333333333333" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/activity_media_details.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/crop_image_activity.xml" value="0.25" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/crop_image_view.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/fragment_crop.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/fragment_doc_picker.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/fragment_media_folder_picker.xml" value="0.14010416666666667" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/fragment_media_picker.xml" value="0.14010416666666667" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/fragment_photo_editor.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/fragment_photo_picker.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/item_doc_layout.xml" value="0.20104166666666667" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/item_filter_layout.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/item_folder_layout.xml" value="0.14010416666666667" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/item_photo_layout.xml" value="0.17502532928064843" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/photo_editor_view.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/popwindow.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/sticker_view.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/layout/text_editor.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/app/src/main/res/menu/picker_menu.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/imageeditengine/src/main/res/layout/activity_image_edit.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/imageeditengine/src/main/res/layout/crop_image_activity.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/imageeditengine/src/main/res/layout/crop_image_view.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/imageeditengine/src/main/res/layout/fragment_crop.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/imageeditengine/src/main/res/layout/fragment_photo_editor.xml" value="0.17502532928064843" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/imageeditengine/src/main/res/layout/item_filter_layout.xml" value="0.17502532928064843" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/imageeditengine/src/main/res/layout/photo_editor_view.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/imageeditengine/src/main/res/layout/popwindow.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/imageeditengine/src/main/res/layout/sticker_view.xml" value="0.35989583333333336" />
+        <entry key="..\:/Swapnil/WhatsappImageFilter/imageeditengine/src/main/res/layout/text_editor.xml" value="0.35989583333333336" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
