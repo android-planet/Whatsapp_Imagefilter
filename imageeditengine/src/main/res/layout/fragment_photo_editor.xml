@@ -17,16 +17,14 @@
       android:layout_height="match_parent"
       android:layout_gravity="center"
       android:adjustViewBounds="true"
-      android:scaleType="centerInside"
-      />
+      android:scaleType="centerInside" />
 
   <com.droidninja.imageeditengine.views.PhotoEditorView
 
       android:id="@+id/photo_editor_view"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:visibility="visible"
-      />
+      android:visibility="visible" />
 
   <ImageView
       android:id="@+id/delete_view"

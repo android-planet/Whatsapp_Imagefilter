@@ -196,6 +196,8 @@ public class PhotoEditorFragment extends BaseFragment
         filterLabel = view.findViewById(R.id.filter_label);
         doneBtn = view.findViewById(R.id.done_btn);
 
+
+        Log.d("______visi",""+filterRecylerview.getVisibility());
         if (getArguments() != null && getActivity() != null && getActivity().getIntent() != null) {
 
             imagePath = getArguments().getString(ImageEditor.EXTRA_IMAGE_PATH);
@@ -279,8 +281,10 @@ public class PhotoEditorFragment extends BaseFragment
                         filterLayoutHeight = filterLayout.getHeight();
                         filterLayout.setTranslationY(filterLayoutHeight);
                         photoEditorView.setOnTouchListener(
-                                new FilterTouchListener(filterLayout, filterLayoutHeight, mainImageView,
-                                        photoEditorView, filterLabel, doneBtn));
+                                new FilterTouchListener(
+                                        filterLayout, filterLayoutHeight, mainImageView,
+                                        photoEditorView, filterLabel, doneBtn,filterRecylerview)
+                        );
                     }
                 });
 
@@ -328,15 +332,15 @@ public class PhotoEditorFragment extends BaseFragment
         photoEditorView.hidePaintView();
       }*/
 
-              //  Toast.makeText(getContext(), "ok", Toast.LENGTH_SHORT).show();
-           // CropImage.activity(null).setGuidelines(CropImageView.Guidelines.ON).start(getActivity());
+            //  Toast.makeText(getContext(), "ok", Toast.LENGTH_SHORT).show();
+            // CropImage.activity(null).setGuidelines(CropImageView.Guidelines.ON).start(getActivity());
             Intent intent = new Intent(getContext(), CropImageActivity.class);
             Bundle bundle = new Bundle();
             bundle.putParcelable(CROP_IMAGE_EXTRA_SOURCE, Uri.parse(imagePath));
-            bundle.putParcelable(CROP_IMAGE_EXTRA_OPTIONS,  new CropImageOptions());
+            bundle.putParcelable(CROP_IMAGE_EXTRA_OPTIONS, new CropImageOptions());
             intent.putExtra(CropImage.CROP_IMAGE_EXTRA_BUNDLE, bundle);
-          //  startActivity(intent);
-            startActivityForResult(intent,CROP_IMAGE_ACTIVITY_REQUEST_CODE);
+            //  startActivity(intent);
+            startActivityForResult(intent, CROP_IMAGE_ACTIVITY_REQUEST_CODE);
 
             //   startActivity(new Intent(getContext(), CropImageActivity.class));
         } else if (id == R.id.stickers_btn) {
