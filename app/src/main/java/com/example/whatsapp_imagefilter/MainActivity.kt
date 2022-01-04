@@ -1,6 +1,7 @@
 package com.example.whatsapp_imagefilter
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.graphics.BitmapFactory
@@ -16,6 +17,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 //TODO
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("CheckResult")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -27,17 +29,17 @@ class MainActivity : AppCompatActivity() {
                 .request(Manifest.permission.WRITE_EXTERNAL_STORAGE,
                     Manifest.permission.CAMERA,
                     Manifest.permission.READ_EXTERNAL_STORAGE)
-                .subscribe({ granted ->
+                .subscribe { granted ->
                     if (granted) { // Always true pre-M
                         // I can control the camera now
                         FilePickerBuilder.getInstance().setMaxCount(1)
                             .setActivityTheme(R.style.LibAppTheme)
                             .pickPhoto(this)
                     } else {
-                        // Oups permission denied
+
                         Toast.makeText(this, "Not given permission", Toast.LENGTH_SHORT).show()
                     }
-                })
+                }
 
         }
     }
@@ -48,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             FilePickerConst.REQUEST_CODE_PHOTO ->
                 if (resultCode == Activity.RESULT_OK && data != null) {
                     val photoPaths = ArrayList<String>()
-                    photoPaths.addAll(data.getStringArrayListExtra(FilePickerConst.KEY_SELECTED_MEDIA)!!);
+                    photoPaths.addAll(data.getStringArrayListExtra(FilePickerConst.KEY_SELECTED_MEDIA)!!)
 
                     if (photoPaths.size > 0) {
                         ImageEditor.Builder(this, photoPaths[0])
