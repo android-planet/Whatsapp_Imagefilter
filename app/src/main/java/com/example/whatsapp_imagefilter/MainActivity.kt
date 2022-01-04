@@ -14,6 +14,7 @@ import com.example.whatsapp_imagefilter.filepicker.FilePickerConst
 import com.tbruyelle.rxpermissions2.RxPermissions
 import kotlinx.android.synthetic.main.activity_main.*
 
+//TODO
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
             rxPermissions
                 .request(Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                    Manifest.permission.CAMERA,
                     Manifest.permission.READ_EXTERNAL_STORAGE)
                 .subscribe({ granted ->
                     if (granted) { // Always true pre-M
